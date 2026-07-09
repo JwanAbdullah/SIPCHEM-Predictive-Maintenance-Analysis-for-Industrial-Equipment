@@ -5,12 +5,13 @@ Entry point for the Predictive Maintenance Analysis project.
 Loads the dataset, performs data cleaning, and saves the cleaned data.
 """
 
-from data_cleaning import (
+from data_preparation import (
     load_dataset,
     inspect_dataset,
     clean_dataset,
     save_cleaned_data
 )
+from analysis import calculate_kpis, print_kpis, save_kpis
 
 
 def main():
@@ -29,6 +30,13 @@ def main():
 
     # Save cleaned dataset
     save_cleaned_data(cleaned_df, "outputs/cleaned_data.csv")
+    
+    # Calculate KPIs
+    kpis = calculate_kpis(cleaned_df)
+
+    # Display KPIs
+    print_kpis(kpis)
+    save_kpis(kpis, "outputs/kpis.csv")
 
     print("\nData cleaning completed successfully.")
     print("Cleaned dataset saved to outputs/cleaned_data.csv")
