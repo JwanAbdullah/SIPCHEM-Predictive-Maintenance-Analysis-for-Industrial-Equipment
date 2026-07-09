@@ -1,0 +1,2 @@
+https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
+https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020
