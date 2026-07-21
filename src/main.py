@@ -13,7 +13,7 @@ from data_preparation import (
 )
 from analysis import calculate_kpis, print_kpis, save_kpis
 from exploratory_analysis import run_exploratory_analysis
-
+from risk_analysis import run_risk_analysis
 
 def main():
     print("=" * 60)
@@ -41,7 +41,9 @@ def main():
     
     # Exploratory Data Analysis
     run_exploratory_analysis(cleaned_df)
-
+    # Risk Analysis
+    run_risk_analysis(cleaned_df)
+    
     print("Cleaned dataset saved to outputs/cleaned_data.csv")
     print("KPIs saved to: outputs/kpis.csv")
     print("EDA figures saved to: outputs/figures/")
