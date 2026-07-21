@@ -12,6 +12,7 @@ from data_preparation import (
     save_cleaned_data
 )
 from analysis import calculate_kpis, print_kpis, save_kpis
+from exploratory_analysis import run_exploratory_analysis
 
 
 def main():
@@ -37,9 +38,14 @@ def main():
     # Display KPIs
     print_kpis(kpis)
     save_kpis(kpis, "outputs/kpis.csv")
+    
+    # Exploratory Data Analysis
+    run_exploratory_analysis(cleaned_df)
 
-    print("\nData cleaning completed successfully.")
     print("Cleaned dataset saved to outputs/cleaned_data.csv")
+    print("KPIs saved to: outputs/kpis.csv")
+    print("EDA figures saved to: outputs/figures/")
+
 
 
 if __name__ == "__main__":

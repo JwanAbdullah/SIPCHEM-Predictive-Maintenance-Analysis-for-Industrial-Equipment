@@ -9,7 +9,6 @@ import pandas as pd
 def load_dataset(filepath):
     #Load the dataset into a Pandas DataFrame.
 
-    print("\nLoading dataset...")
     df = pd.read_csv(filepath)
     print("Dataset loaded successfully.")
 

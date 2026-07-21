@@ -25,13 +25,9 @@ def calculate_kpis(df):
     total_records = len(df)
 
     total_failures = df["Machine failure"].sum()
-
     failure_rate = (total_failures / total_records) * 100
-
     average_tool_wear = df["Tool wear [min]"].mean()
-
     average_torque = df["Torque [Nm]"].mean()
-
     average_rotational_speed = df["Rotational speed [rpm]"].mean()
 
     kpis = {
