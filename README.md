@@ -96,7 +96,7 @@ SIPCHEM-Predictive-Maintenance-Analysis-for-Industrial-Equipment/
 - ✅ KPI Calculation
 - ✅ Exploratory Data Analysis
 - ✅ Risk Scoring
-- ⏳ Data Visualization
+- ✅ Dashboard
 - ⏳ Final Report
 
 ---

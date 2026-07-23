@@ -44,6 +44,8 @@ def main():
     # Risk Analysis
     run_risk_analysis(cleaned_df)
     
+    save_cleaned_data(cleaned_df, "outputs/cleaned_data.csv")
+    
     print("Cleaned dataset saved to outputs/cleaned_data.csv")
     print("KPIs saved to: outputs/kpis.csv")
     print("EDA figures saved to: outputs/figures/")
